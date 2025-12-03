@@ -1,7 +1,6 @@
 {
   "name": "linkedin-search-app",
   "version": "0.1.0",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -9,8 +8,8 @@
     "start": "next start",
     "lint": "eslint"
   },
-    "@radix-ui/react-avatar": "^1.1.10",
-    "exa-js": "^1.0.12",
+  "dependencies": {
+    "@ai-sdk/react": "^2.0.106",
     "@openrouter/ai-sdk-provider": "^1.2.0",
     "@radix-ui/react-avatar": "^1.1.10",
     "@radix-ui/react-checkbox": "^1.3.3",
@@ -24,6 +23,7 @@
     "axios": "^1.12.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "exa-js": "^1.0.12",
     "lucide-react": "^0.544.0",
     "next": "15.5.3",
     "react": "19.1.0",

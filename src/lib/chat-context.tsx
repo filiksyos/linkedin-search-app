@@ -9,10 +9,7 @@ export interface ChatUIMessage {
   id: string
   role: 'user' | 'assistant'
   text: string
-  parts: Array<{
-    type: 'text'
-    text: string
-  }>
+  parts: Array<any> // Using any to match AI SDK's flexible message structure
 }
 
 interface ChatContextValue {
@@ -49,10 +46,6 @@ export function ChatProvider({ children }: { children: ReactNode }) {
 export function useSharedChatContext() {
   const context = useContext(ChatContext)
   if (!context) {
-    throw new Error('useSharedChatContext must be used within a ChatProvider')
-  }
-  return context
-}
     throw new Error('useSharedChatContext must be used within a ChatProvider')
   }
   return context
