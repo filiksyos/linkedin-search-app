@@ -26,7 +26,7 @@ export function Chat() {
       {/* Header */}
       <div className="flex items-center justify-between p-4 border-b bg-card">
         <div className="flex items-center space-x-2">
-          <LinkedinIcon className="w-5 h-5 text-primary" />
+          <Linkedin className="w-5 h-5 text-primary" />
           <h1 className="text-lg font-semibold">LinkedIn Search</h1>
         </div>
       </div>
