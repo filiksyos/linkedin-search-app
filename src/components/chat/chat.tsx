@@ -9,7 +9,7 @@ import {
   ConversationContent,
   ConversationScrollButton,
 } from '@/components/ai-elements/conversation'
-import { LinkedinIcon } from 'lucide-react'
+import { Linkedin } from 'lucide-react'
 
 export function Chat() {
   const { chat } = useSharedChatContext()
