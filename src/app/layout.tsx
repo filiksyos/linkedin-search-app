@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ChatProvider } from "@/lib/chat-context";
-import { AuthProvider } from "@/contexts/AuthContext";
-import AuthGuard from "@/components/auth/AuthGuard";
-import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Anysearch",
-  description: "search any link",
+  title: "LinkedIn Search",
+  description: "Search LinkedIn profiles with AI-powered queries using Exa",
 };
 
 export default function RootLayout({
@@ -31,15 +28,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AuthProvider>
-          <AuthGuard>
-            <ChatProvider>
-              {children}
-            </ChatProvider>
-          </AuthGuard>
-        </AuthProvider>
-        <Analytics />
+        <ChatProvider>
+          {children}
+        </ChatProvider>
       </body>
+    </html>
+  );
+}
     </html>
   );
 }
