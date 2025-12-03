@@ -35,7 +35,7 @@ export function Chat() {
       {messages.length === 0 ? (
         <div className="flex-1 flex items-center justify-center">
           <div className="text-center text-muted-foreground">
-            <LinkedinIcon className="w-12 h-12 mx-auto mb-4 opacity-50" />
+            <Linkedin className="w-12 h-12 mx-auto mb-4 opacity-50" />
             <p className="text-lg font-medium mb-2">Search LinkedIn Profiles</p>
             <p className="text-sm">Ask me to find people on LinkedIn and I&apos;ll search for you.</p>
             <p className="text-xs mt-4 text-muted-foreground/70">Examples: &quot;Find AI engineers&quot;, &quot;Anthropic developers&quot;</p>
